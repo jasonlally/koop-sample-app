@@ -7,7 +7,7 @@ var express = require('express')
 var koop = require('koop')(config)
 
 // cache
-// var pgCache = require('koop-pgcache')
+var pgCache = require('koop-pgcache')
 
 // providers
 var agol = require('koop-agol')
@@ -34,7 +34,7 @@ if (config.https_server &&
 }
 
 // register PostGIS cache
-// koop.registerCache(pgCache)
+koop.registerCache(pgCache)
 
 // register koop providers
 koop.register(agol)
