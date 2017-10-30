@@ -4,6 +4,6 @@ module.exports = {
   },
   "data_dir": "/usr/local/koop/",
   "db": {
-    "conn": process.env.DATABASE_URL
+    "conn": process.env.HEROKU_POSTGRESQL_CYAN_URL
   }
 }
